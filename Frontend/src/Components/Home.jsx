@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { UserContext } from '../UserContext';
 import Header2 from './Header2';
+import SubscriptionPlans from './SubscriptionPlans';
 
 const Home = () => {
   const { loginSuccess, setLoginSuccess } = useContext(UserContext);
@@ -266,6 +267,13 @@ const Home = () => {
 
         </div>
       </section>
+      <SubscriptionPlans />
+      <footer className="bg-gray-900 text-white py-6">
+        <div className="container mx-auto text-center">
+          <p className="text-sm">© 2023 PixyBox. All rights reserved.</p>
+        </div>
+      </footer>   
+
     </>
   );
 };

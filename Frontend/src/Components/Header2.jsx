@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useState,useEffect } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import { UserContext } from "../UserContext";
 
@@ -6,6 +6,20 @@ const Header2 = () => {
 
   const navigate = useNavigate();
   const loggedData = useContext(UserContext);
+
+    const [planName, setPlanName] = useState("");
+    const [planColor, setPlanColor] = useState("");
+  
+    useEffect(() => {
+      const storedPlanName = localStorage.getItem("planName");
+      console.log("Stored Plan Name:", storedPlanName);
+      
+      const storedPlanColor = localStorage.getItem("planColor");
+      console.log("Stored Plan Color:", storedPlanColor);
+      
+      if (storedPlanName) setPlanName(storedPlanName);
+      if (storedPlanColor) setPlanColor(storedPlanColor);
+    }, []);
 
 
   // function to handle Logout
@@ -51,6 +65,14 @@ const Header2 = () => {
                   isActive ? 'mx-2 text-white cursor-pointer w-auto' : 'mx-2 hover:text-white cursor-pointer w-auto'
                 }
               >Reviews</NavLink>
+                              {/* Show plan name if exists */}
+            {planName && (
+              <div
+                className={`text-white px-4 py-1 rounded-lg font-semibold text-sm bg-gradient-to-r ${planColor}`}
+              >
+                Plan: {planName}
+              </div>
+            )}
         </nav>
 
         <button id="logout" onClick={handleLogout} className="inline-flex text-white font-mono items-center bg-red-600 border-2 border-red-600 py-1 px-3 md:py-2 md:px-5 focus:outline-none hover:bg-red-700 hover:border-red-700 rounded text-base  md:mt-0 active:bg-red-700 active:border-red-700">
