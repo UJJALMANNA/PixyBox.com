@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    /* background-color: #060d17; */
+    background-color: #111827;
+    /* background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/03ad76d1-e184-4d99-ae7d-708672fa1ac2/web/IN-en-20241111-TRIFECTA-perspective_149877ab-fcbd-4e4f-a885-8d6174a1ee81_large.jpg"); */
+    
+}
+
+/* For Chrome, Safari, and Edge */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px; /* Set the width of the scrollbar */
+  height: 4px;
+}
+  
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #ff0000; /* Thumb color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  cursor: pointer;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: #060d1783; /* Track color */
+  border-radius: 10px;
+}
+
+.scrollbar-custom {
+  padding-right: 12px; /* Adds space between the scrollbar and content */
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hidden {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+}
