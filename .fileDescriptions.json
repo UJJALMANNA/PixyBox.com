@@ -19,5 +19,7 @@
   "Frontend/dist/assets/index-vst5eZU5.js": "TODO: Add description",
   "Frontend/dist/index.html": "TODO: Add description",
   ".git/index": "TODO: Add description",
-  ".git/refs/heads/main": "TODO: Add description"
+  ".git/refs/heads/main": "TODO: Add description",
+  ".git/ORIG_HEAD": "TODO: Add description",
+  ".git/refs/remotes/origin/main": "TODO: Add description"
 }
