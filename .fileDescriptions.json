@@ -5,5 +5,17 @@
   "Backend/server.js": "This file is the main server script for the backend, responsible for setting up the Express server and defining API routes.",
   "Backend/package.json": "This file contains metadata about the backend project, including dependencies, scripts, and other configuration details.",
   "Frontend": "This directory contains the frontend code for the application, including user interface components, styles, and client-side logic.",
-  "README.md": "This file provides an overview of the project, including setup instructions, usage guidelines, and other relevant information."
+  "README.md": "This file provides an overview of the project, including setup instructions, usage guidelines, and other relevant information.",
+  "Frontend/dist": "TODO: Add description",
+  "Frontend/dist/ayan.jpg": "TODO: Add description",
+  "Frontend/dist/logo.png": "TODO: Add description",
+  "Frontend/dist/photo.jpg": "TODO: Add description",
+  "Frontend/dist/rishov_sir.jpg": "TODO: Add description",
+  "Frontend/dist/ritarshi.jpg": "TODO: Add description",
+  "Frontend/dist/souvik.jpg": "TODO: Add description",
+  "Frontend/dist/sovan.jpg": "TODO: Add description",
+  "Frontend/dist/ujjal.jpg": "TODO: Add description",
+  "Frontend/dist/assets": "TODO: Add description",
+  "Frontend/dist/assets/index-vst5eZU5.js": "TODO: Add description",
+  "Frontend/dist/index.html": "TODO: Add description"
 }
