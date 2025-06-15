@@ -53,7 +53,7 @@ const Reviews = () => {
 
   const getAllReviews = () => {
     setActiveTab('all');
-    fetch("http://localhost:2020/all-reviews", {
+    fetch(`${import.meta.env.VITE_REACT_APP}/all-reviews`, {
       method: "GET"
     })
       .then((res) => {
@@ -82,7 +82,7 @@ const Reviews = () => {
       : loggedData.loggedUser;
 
     setActiveTab('my');
-    fetch(`http://localhost:2020/my-reviews/${loggedUser.userid}`, {
+    fetch(`${import.meta.env.VITE_REACT_APP}/my-reviews/${loggedUser.userid}`, {
       method: "GET"
     })
       .then((res) => {
@@ -106,7 +106,7 @@ const Reviews = () => {
 
 
   const deleteReview = (reviewId) => {
-    fetch(`http://localhost:2020/delete-review/${reviewId}`, {
+    fetch(`${import.meta.env.VITE_REACT_APP}/delete-review/${reviewId}`, {
       method: "DELETE"
     })
       .then((res) => {

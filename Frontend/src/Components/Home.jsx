@@ -17,13 +17,13 @@ const Home = () => {
   const fetchMovies = async () => {
     try {
       if (selectedGenre === 'All') {
-        const response = await fetch('http://localhost:5000/movies/genres/all', {method: "GET"});
+        const response = await fetch(`${import.meta.env.VITE_FLASK_APP}/movies/genres/all`, {method: "GET"});
         const data = await response.json();
         console.log(data)
         setMovies(data);
       }
       else {
-        const response = await fetch(`http://localhost:5000/movies/genres/${selectedGenre}`, {method: "GET"});
+        const response = await fetch(`${import.meta.env.VITE_FLASK_APP}/movies/genres/${selectedGenre}`, {method: "GET"});
         const data = await response.json();
         console.log(data)
         setMovies(data);
@@ -38,7 +38,7 @@ const Home = () => {
   // Fetch the names of all the movies
   useEffect(()=>{
       const getMovieNames = async() =>{
-          await fetch("http://localhost:5000/movies/titles", {method: "GET"})
+          await fetch(`${import.meta.env.VITE_FLASK_APP}/movies/titles`, {method: "GET"})
           .then((res)=>res.json())
           .then((data)=>{
               setMovieNames(data);
@@ -64,7 +64,7 @@ const Home = () => {
   // Get the list of all the genres
   useEffect(() => {
     const getGenres = async () => {
-      await fetch('http://localhost:5000/genres', { method: 'GET' })
+      await fetch(`${import.meta.env.VITE_FLASK_APP}/genres`, { method: 'GET' })
         .then((res) => res.json())
         .then((data) => {
           setGenres(data);
@@ -105,7 +105,7 @@ const Home = () => {
   const handleRecommendClick = async(event) => {
     event.preventDefault();
     if (selectedMovie) {
-        await fetch(`http://localhost:5000/recommend/${selectedMovie}`, {method: "GET"})
+        await fetch(`${import.meta.env.VITE_FLASK_APP}/recommend/${selectedMovie}`, {method: "GET"})
         .then((res)=>res.json())
         .then((data)=>{
           console.log(data)

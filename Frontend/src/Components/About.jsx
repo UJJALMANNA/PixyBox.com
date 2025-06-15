@@ -101,7 +101,7 @@ const About = () => {
       else
       {
           event.preventDefault();
-          fetch(`http://localhost:2020/review/${JSON.parse(loggedData.loggedUser).userid}`, {
+          fetch(`${import.meta.env.VITE_REACT_APP}/review/${JSON.parse(loggedData.loggedUser).userid}`, {
             method: "POST",
             body: JSON.stringify(reviewDetail),
       

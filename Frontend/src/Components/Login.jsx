@@ -65,7 +65,7 @@ const Login = () => {
     // this will prevent the deafult behaviour of the component, which is re-rendering
     event.preventDefault();
 
-    fetch("http://localhost:2020/login", {
+    fetch(`${import.meta.env.VITE_REACT_APP}/login`, {
 
       method:"POST",
       body: JSON.stringify(userCred),

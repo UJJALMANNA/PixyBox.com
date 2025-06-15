@@ -53,7 +53,7 @@ const Register = () => {
     event.preventDefault();
     console.log(userDetail);
 
-    fetch("http://localhost:2020/register", {
+    fetch(`${import.meta.env.VITE_REACT_APP}/register`, {
       method: "POST",
       body: JSON.stringify(userDetail),
 
