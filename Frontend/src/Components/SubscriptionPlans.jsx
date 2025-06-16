@@ -83,7 +83,7 @@ function SubscriptionPlans() {
       currency: 'INR',
       name: 'PixyBox', //your business name
       description: "Test Transaction",
-      image: "https://example.com/your_logo",
+      image: "https://sdmntprwestus.oaiusercontent.com/files/00000000-3b18-6230-bf31-753f54c9f059/raw?se=2025-06-16T04%3A16%3A55Z&sp=r&sv=2024-08-04&sr=b&scid=0b862858-28ed-5bea-935c-7c2295ef99ce&skoid=bbd22fc4-f881-4ea4-b2f3-c12033cf6a8b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-15T20%3A42%3A53Z&ske=2025-06-16T20%3A42%3A53Z&sks=b&skv=2024-08-04&sig=7rWaYPLtFLQiip/V4gwS1M6O5oDI63JtfeG5RtzcOXg%3D",
       order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
       handler: async function (response) {
         const body = {
@@ -113,12 +113,12 @@ function SubscriptionPlans() {
       },
       prefill: {
         //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
-        name: "Ayan De", //your customer's name
-        email: "deayan@example.com",
-        contact: "9000000000", //Provide the customer's phone number for better conversion rates
+        name: "PixyBox", //your customer's name
+        email: "pixybox@example.com",
+        contact: "7439877052", //Provide the customer's phone number for better conversion rates
       },
       notes: {
-        address: "Razorpay Corporate Office",
+        address: "PixyBox Office",
       },
       theme: {
         color: "#E50914",
