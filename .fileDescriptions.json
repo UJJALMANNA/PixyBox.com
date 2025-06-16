@@ -22,5 +22,9 @@
   ".git/refs/heads/main": "TODO: Add description",
   ".git/ORIG_HEAD": "TODO: Add description",
   ".git/refs/remotes/origin/main": "TODO: Add description",
-  "Frontend/.env": "TODO: Add description"
+  "Frontend/.env": "contains .env variables for the frontend, such as API endpoints or configuration settings.",
+  "Frontend/package.json": "This file contains metadata about the frontend project, including dependencies, scripts, and other configuration details.",
+  "Frontend/src": "This directory contains the source code for the frontend, including React components, styles, and other client-side logic.",
+  "Frontend/src/App.js": "This file is the main React component for the frontend application, responsible for rendering the overall layout and structure of the user interface.",
+  "Frontend/src/components": "This directory contains reusable React components used throughout the frontend application, such as buttons, forms, and layout elements."
 }
