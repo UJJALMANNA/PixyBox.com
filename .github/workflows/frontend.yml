@@ -1,4 +1,5 @@
 name: Frontend CI
+
 on:
   push:
     paths:
@@ -21,6 +22,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: Frontend
 
       - name: Build the frontend
         run: npm run build
+        working-directory: Frontend
